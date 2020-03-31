@@ -20,10 +20,10 @@ const secondNumberIsLess = function (num1, num2) {
   }
 };
 
-const trueIsFirst = function (boolean1, boolean2) {
-  if (boolean1 < boolean2) {
+const trueIsFirst = function (truthy, wrong) {
+  if (truthy < wrong) {
     return 1;
-  } else if (boolean1 > boolean2) {
+  } else if (truthy > wrong) {
     return -1;
   } else {
     return 0;
@@ -41,9 +41,9 @@ const firstNameIsFirstAlphabetically = function (name1, name2) {
 };
 
 const firstLastNameIsFirstAlphabetically = function (lastName, secondLastName) {
-  if lastName > secondLastName) {
+  if (lastName > secondLastName) {
     return 1;
-  } else if lastName < secondLastName) {
+  } else if (lastName < secondLastName) {
     return -1;
   } else {
     return 0;
@@ -53,8 +53,8 @@ const firstLastNameIsFirstAlphabetically = function (lastName, secondLastName) {
 /************************
 // ITERATION FUNCTIONS
  ************************/
-const truesFirst = function (bools) {
-  let newTrue = bools.slice();
+const truesFirst = function (num) {
+  let newTrue = num.slice();
   return newTrue.sort(trueIsFirst);
 };
 
