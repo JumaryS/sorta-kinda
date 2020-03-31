@@ -1,14 +1,72 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const firstNumberIsLess = function (num1, num2) {
+  if (num1 < num2) {
+    return -1;
+  } else if (num1 > num2) {
+    return 1;
+  } else {
+    return 0;
+  }
+};
+const secondNumberIsLess = function (num1, num2) {
+  if (num2 < num1) {
+    return -1;
+  } else if (num2 > num1) {
+    return 1;
+  } else {
+    return 0;
+  }
+};
 
+const trueIsFirst = function (boolean1, boolean2) {
+  if (boolean1 < boolean2) {
+    return 1;
+  } else if (boolean1 > boolean2) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
 
+const firstNameIsFirstAlphabetically = function (name1, name2) {
+  if (name1 > name2) {
+    return 1;
+  } else if (name1 < name2) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
 
+const firstLastNameIsFirstAlphabetically = function (lastName, secondLastName) {
+  if lastName > secondLastName) {
+    return 1;
+  } else if lastName < secondLastName) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
 
 /************************
 // ITERATION FUNCTIONS
  ************************/
+const truesFirst = function (bools) {
+  let newTrue = bools.slice();
+  return newTrue.sort(trueIsFirst);
+};
 
+const sortByNumberAscending = function (nums) {
+  let newNums = nums.slice();
+  return newNums.sort(firstNumberIsLess);
+};
+
+const sortByNumberDescending = function (decending) {
+  let num = decending.slice();
+  return num.sort();
+};
 
 
 
